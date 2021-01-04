@@ -21,3 +21,5 @@ orjson
 passlib[bcrypt]
 odmantic
 email-validator
+uvloop
+httptools
