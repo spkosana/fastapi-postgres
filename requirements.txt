@@ -8,6 +8,7 @@ aiopg
 aiomongodel
 fastapi==0.62.0
 uvicorn==0.13.1
+gunicorn
 numpy
 pandas
 pymongo
