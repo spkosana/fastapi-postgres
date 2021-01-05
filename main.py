@@ -14,7 +14,7 @@ async def home():
         </head>
         <body>
             <h1>Surya Prakash is Special</h1>
-            <img src="/images/bmw.jpg" alt="bmw Icon" style="width:128px;height:128px;">
+            <img src="/images/bmw.jpg" alt="bmw Image" style="width:128px;height:128px;">
         </body>
     </html>
     """
