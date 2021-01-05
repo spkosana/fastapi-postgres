@@ -7,4 +7,14 @@ app = FastAPI()
 
 @app.get("/")
 async def home():
-    return {"application":"Welcome :), Surya Prakash is Special"}
+    html_content = """
+    <html>
+        <head>
+            <title>Surya</title>
+        </head>
+        <body>
+            <h1>Surya Prakash is Special</h1>
+        </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
