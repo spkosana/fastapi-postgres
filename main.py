@@ -23,8 +23,3 @@ async def home():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
-
-
-@app.post("/login/")
-async def login(username: str = Form(...), password: str = Form(...)):
-    return {"username": username}
