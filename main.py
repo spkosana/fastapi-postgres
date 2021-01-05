@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -14,7 +14,7 @@ async def home():
         </head>
         <body>
             <h1>Surya Prakash is Special</h1>
-            <img src="images\bmv.jpg" alt="bmw" width="500" height="600">
+            <img src="./images/bmv.jpg" alt="bmw" width="500" height="600">
         </body>
     </html>
     """
