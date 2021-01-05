@@ -17,7 +17,7 @@ async def home():
             <h1>Surya Prakash is Special</h1>
             <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"  align=“center”>
             <ul>
-                <li><a href="https://www.linkedin.com/in/spkosana/">Website</a></li>
+                <li><a href="https://www.linkedin.com/in/spkosana/">Linked In</a></li>
             </ul>
         </body>
     </html>
