@@ -14,7 +14,7 @@ async def home():
         </head>
         <body>
             <h1>Surya Prakash is Special</h1>
-            <img src="/images/Happy-New-Year.gif" alt="Happy New year" style="width:128px;height:128px;"/>
+            <img src="images\bmv.jpg" alt="bmw" width="500" height="600">
         </body>
     </html>
     """
