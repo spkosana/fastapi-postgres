@@ -19,7 +19,6 @@ async def home():
             <ul>
                 <li><a href="https://www.linkedin.com/in/spkosana/">Website</a></li>
             </ul>
-         height="80">
         </body>
     </html>
     """
