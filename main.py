@@ -5,6 +5,7 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
+
 @app.get("/")
 async def home():
     html_content = """
@@ -14,7 +15,7 @@ async def home():
         </head>
         <body>
             <h1>Surya Prakash is Special</h1>
-            <img src="./images/bmv.jpg" alt="bmw" width="500" height="600">
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg">
         </body>
     </html>
     """
