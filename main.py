@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 async def home():
-    return {"application":"fastapi-postgres"}
+    return {"application":"Welcome :), Surya Kosana is Special"}
