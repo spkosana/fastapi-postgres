@@ -4,22 +4,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
-
-@app.get("/")
-async def home():
-    html_content = """
-    <html>
-        <head>
-            <title>Surya</title>
-        </head>
-        <body>
-            <h1>Surya Prakash is Special</h1>
-            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg"  align=“center”>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/spkosana/">Linked In</a></li>
-            </ul>
-        </body>
-    </html>
-    """
-    return HTMLResponse(content=html_content, status_code=200)
+@app.get("/", response_class=HTMLResponse)
+async def get(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request})
